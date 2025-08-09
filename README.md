@@ -1,2 +1,2 @@
 # Maize_48pangenome
-A detailed step-by-step protocol for graph pangenome construction and SV identification.
+If you have any questions, feel free to contact me. For more data resources, please visit maizepan.cn.
