@@ -1,0 +1,13 @@
+cactus-pangenome ./jobstore genome.txt --outDir pangenome  --workDir `pwd`/tmp \
+  --outName pangenome  --haplo --permissiveContigFilter --gbz full clip  filter \
+  --gfa full clip  filter \
+  --vcf full clip  filter \
+  --giraffe  full clip  filter \
+  --chrom-vg  full clip  filter \
+  --viz full clip   \
+  --odgi full clip  filter \
+  --chrom-og full clip  filter  \
+  --binariesMode local  \
+  --filter 2 \
+  --mgCores 96 --mapCores  96   --consCores 96  --indexCores 96 \
+  --refContigs chr1 chr2 chr3 chr4 chr5 chr6 chr7 chr8 chr9 chr10 --reference B73  --logFile cactus-pangenome.log   --restart
