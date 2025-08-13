@@ -16,8 +16,8 @@ transdecoder/util/gff3_file_to_proteins.pl --gff3 sample.longest_isoform.gff3 --
 # Extract protein sequences
 transdecoder/util/gff3_file_to_proteins.pl --gff3 sample.longest_isoform.gff3 --fasta $genome --seqType prot > sample.pep.fa
 
-# Convert CDS to OrthoFinder format (length ≥150 bp)
+# Convert CDS to OrthoFinder format
 perl get_gene_longest_fa_for_OrthoFinder.pl -l 150 --gff sample.longest_isoform.gff3 --fa sample.cds.fa -p sample -o cds
 
-# Convert protein sequences to OrthoFinder format (length ≥50 aa)
+# Convert protein sequences to OrthoFinder format
 perl get_gene_longest_fa_for_OrthoFinder.pl -l 50 --gff sample.longest_isoform.gff3 --fa sample.pep.fa -p sample -o pep
