@@ -1,0 +1,10 @@
+java -Xmx8000M -jar NLR-Annotator-v2.1b.jar \
+    -i sample.fa \
+    -x mot.txt \
+    -y store.txt \
+    -o sample.txt \
+    -t 5 \
+    -g sample.gff \
+    -b sample.bed \
+    -a sample.MotifAlignment.fasta \
+    -m sample.motifs.bed
